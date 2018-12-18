@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <body>
+    <form name="authenticate" action="{{ path('user_register') }}" method="post">
+
+    <div class="row">
+        <div class="column left">
+            <h2>Общи условия за използване на онлайн книжарницата</h2>
+            <h3>Абонамент</h3>
+            <div class="text">
+                <p>Ако желаете можете да получавате известие за всяка получена нова книга в книжарницата
+                    на указан от Вас автор или жанр</p>
+                <h3>Статут</h3>
+                <p>Всеки потребител започва с бронзов статут. След закупуване книги на стойност над 100 лева се придобива
+                    сребърен статут, което води до получаване на 10% отстъпка от цената на книгата. След закупуване
+                    книги на стойност над 300 лева се придобива златен статут и съответно - 40% отстъпка</p>
+                <h3>Закупуване на книга</h3>
+                <p>1.За да купувате книги от тук трябва да сте регистриран потребител</p>
+                <p>2.Поръчване на книгата се прави след като сте</p>
+
+            </div>
+        </div>
+        <div class="column middle">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Username</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Comfirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-black">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Agree with general rules</label>
+                </div>
+                <input type="hidden" name="csrf_token" value="{{ csrf_token('register') }}">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+        <div class="column right">
+            <div class="text">
+                <p>влезли в профила си</p>
+                <p>3.Посочва се адреса на най-удобния за Вас офис на Еконт</p>
+                <p>4.Заявената от Вас книга се изпраща с наложен платеж още същия ден</p>
+                <p>5.След пристигане на поръчката в офиса на Еконт получавате съобщение на посочен от Вас телефонен номер</p>
+                <p>6.Освен стойността на книгата заплащате на Еконт 2.00 лева за доставката</p>
+            </div>
+        </div>
+    </div>
+    </form>
+    </body>
+
+
+
+{% endblock %}

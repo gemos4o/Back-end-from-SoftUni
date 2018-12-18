@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <body>
+    <div class="begin">
+        <h3>Онлайн книжарница</h3>
+        <h1>Добре дошли</h1>
+        <h4>Тук можете да разгледате наличните книги
+            и да закупите някои от тях</h4>
+        <h4> Приятно прекарване!</h4>
+
+        <button><a href="{{ path('security_login') }}">Влез в профила си</a></button>
+        <button><a href="{{ path('user_register') }}">Регистрирай се</a></button>
+        <button><a href="{{ path('security_login') }}"></a>Влез като гост</button>
+
+    </div>
+
+    <div class="index">
+        <img src="{{ asset('imagesShop/shelf1.jpg')  }}" width="350" height="390" >
+        <img src="{{ asset('imagesShop/shelf2.jpg')  }}" width="350" height="390" >
+        <img src="{{ asset('imagesShop/shelf3.jpg')  }}" width="350" height="390" >
+        <img src="{{ asset('imagesShop/shelf4.jpg')  }}" width="350" height="390" >
+    </div>
+
+    </body>
+
+
+
+{% endblock %}

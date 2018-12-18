@@ -1,0 +1,48 @@
+ {% extends 'base.html.twig' %}
+
+ {% block body %}
+
+     <body>
+
+    <form name="authenticate" action="{{ path('security_login') }}" method="post">
+
+        <div class="row">
+        <div class="column left">
+            <div class="loginleft">
+                <img src="{{ asset('imagesShop/book6.jpg')  }}" width="340" height="203" >
+                <img src="{{ asset('imagesShop/book7.jpg')  }}" width="340" height="203" >
+                <img src="{{ asset('imagesShop/book8.jpg')  }}" width="340" height="203" >
+
+            </div>
+        </div>
+        <div class="column middle">
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Username</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token('authenticate') }}">
+                    <small id="passwordHelp" class="form-text">Forgotten password?</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+
+        </div>
+        <div class="column right">
+            <div class="loginleft">
+                <img src="{{ asset('imagesShop/book6.jpg')  }}" width="340" height="203" >
+                <img src="{{ asset('imagesShop/book7.jpg')  }}" width="340" height="203" >
+                <img src="{{ asset('imagesShop/book8.jpg')  }}" width="340" height="203" >
+            </div>
+        </div>
+    </div>
+
+    </form>
+
+    </body>
+
+
+
+{% endblock %}

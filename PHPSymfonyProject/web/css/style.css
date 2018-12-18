@@ -1,0 +1,146 @@
+
+
+.body {
+    background-color: #5eb5e0;
+}
+
+h4 {
+    text-align: center;
+}
+
+.baba, .index {
+    display: flex;
+}
+
+.begin {
+    padding-top: 0;
+    margin-top: -20px;
+    background-color:#5eb5e0 ;
+}
+
+.begin button {
+    text-align: center;
+    margin-left: 175px;
+    color: #0044cc;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+    width: 220px;
+}
+
+
+h1, h3 {
+    text-align: center;
+}
+
+.baba img {
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.p {
+    width: 45em;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.btnback {
+    color: #002a80;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left:80px;
+    padding: 10px 45px;
+    border-radius: 10px;
+
+
+}
+
+.btnbuy {
+    color: #002a80;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left:80px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.body2 {
+    background-color: yellow;
+
+}
+.shop img {
+    float: left;
+    position: relative;
+    padding-top: -20px;
+}
+
+.search a:link {
+    font-size: 30px;
+
+}
+.search {
+    text-align: center;
+}
+.link {
+    color: #002a80;
+}
+.resulth1 {
+    padding-top: 250px;
+    padding-bottom: 40px;
+}
+.resultauthors {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 608px;
+    text-align: center;
+}
+
+.left {
+    width: 25%;
+    background-color: #5eb5e0;
+}
+.middle {
+    width: 50%;
+    background-color: #0088cc;
+}
+.right {
+    width: 25%;
+    background-color: #5eb5e0 ;
+}
+
+.text {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.form-group {
+    margin-top: 40px;
+    margin-left: 180px;
+    width: 300px;
+}
+.loginleft {
+    margin-left: 0;
+    margin-top:-10px;
+}
+
+.logright{
+    margin-left:-10px;
+}
+
+.btn-primary {
+    margin-top: 30px;
+    font-weight: bold;
+}
+.data {
+    float: left;
+    text-align: left;
+}
+
+#user {
+    padding-left: 50px;
+}
+
