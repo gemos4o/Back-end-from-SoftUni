@@ -27,7 +27,7 @@
                     <input type="hidden" name="csrf_token" value="{{ csrf_token('authenticate') }}">
                     <small id="passwordHelp" class="form-text">Forgotten password?</small>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+            <a href="{{ path('user_profile') }}">Login</a>
 
         </div>
         <div class="column right">

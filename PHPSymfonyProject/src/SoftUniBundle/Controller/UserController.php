@@ -10,17 +10,12 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class UserController extends Controller
 {
-    public function registerAction($name)
-    {
-        return $this->render('', array('name' => $name));
-    }
-
     /**
-     * @Route("/register", name="user_register")
+     * @Route("register", name="user_register")
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function regeisterAction(Request $request) {
+    public function registerAction(Request $request) {
         $user = new User();
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
@@ -33,9 +28,24 @@ class UserController extends Controller
             $em->persist($user);
             $em->flush();
 
-            $this->redirectToRoute('security_login');
+            return $this->redirectToRoute('security_login');
         }
 
         return $this->render('user/register.html.twig');
     }
+
+    /**
+     * @Route("/profile", name="user_profile")
+     */
+    public function profile() {
+        $userId = $this->getUser()->getId();
+            $user = $this->getDoctrine()->getRepository(User::class)->find($userId);
+
+        return $this->render('user/profile.html.twig',
+            ['user' => $user]);
+    }
+
+
+
+
 }
