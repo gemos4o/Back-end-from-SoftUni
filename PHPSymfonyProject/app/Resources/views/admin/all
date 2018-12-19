@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <body>
+    <div class="admin_row">
+        <div class="admin_left">
+            <div class="loginleft">
+                <img src="{{ asset('imagesShop/book6.jpg')  }}" width="170" height="207" >
+                <img src="{{ asset('imagesShop/book7.jpg')  }}" width="170" height="207" >
+                <img src="{{ asset('imagesShop/book8.jpg')  }}" width="170" height="207" >
+                <img src="{{ asset('imagesShop/book6.jpg')  }}" width="170" height="207" >
+            </div>
+        </div>
+        <div class="admin_middle">
+            <h1>Книги в наличност</h1>
+            <table border="1">
+                <tr>
+                    <th>Име</th>
+                    <th>Жанр</th>
+                    <th>Автор</th>
+                    <th>Количество</th>
+                    <th>Покупна цена</th>
+                    <th>Продажна цена</th>
+                </tr>
+            </table>
+
+        </div>
+        <div class="admin_right">
+            <div class="logright">
+                <img src="{{ asset('imagesShop/book6.jpg')  }}" width="160" height="203" >
+                <img src="{{ asset('imagesShop/book7.jpg')  }}" width="160" height="203" >
+                <img src="{{ asset('imagesShop/book8.jpg')  }}" width="160" height="203" >
+                <img src="{{ asset('imagesShop/book6.jpg')  }}" width="160" height="203" >
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+
+{% endblock %}
+

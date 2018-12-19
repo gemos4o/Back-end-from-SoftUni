@@ -18,7 +18,7 @@ h4 {
     background-color:#5eb5e0 ;
 }
 
-.begin button {
+.begin input {
     text-align: center;
     margin-left: 175px;
     color: #0044cc;
@@ -143,4 +143,71 @@ h1, h3 {
 #user {
     padding-left: 50px;
 }
+
+.admin_middle {
+    width: 105%;
+    background-color: #0088cc;
+    margin-left: 0;
+    float: left;
+}
+
+.admin_left, .admin_right {
+    width: 17%;
+    display: flex;
+}
+
+.admin_row {
+    display: flex;
+}
+
+.admin_middle button {
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 110px;
+    font-weight: bold;
+}
+
+#razg {
+
+    margin: 0 0 0 330px;
+    padding: 11px 24px;
+}
+
+.spravki {
+    text-align: left;
+    margin-left: 110px;
+}
+
+.pokupki {
+    display: flex;
+}
+
+.pokupki button {
+    margin-left: 140px;
+}
+
+.pokupki .den {
+    padding: 0 30px;
+
+}
+.pokupki .mesec, .pokupki .mesecpro, .pokupki .mesecpec{
+    padding: 0 17px;
+}
+
+.pokupki .denpro {
+    margin-left: 122px;
+    padding: 0 30px;
+}
+
+.pokupki .denpec {
+    margin-left: 78px;
+    padding: 0 30px;
+}
+
+.logright {
+    margin-left: 0;
+}
+
+
+
 

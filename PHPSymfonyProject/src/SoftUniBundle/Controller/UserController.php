@@ -37,14 +37,19 @@ class UserController extends Controller
     /**
      * @Route("/profile", name="user_profile")
      */
-    public function profile() {
+    public function profileAction(){
         $userId = $this->getUser()->getId();
-            $user = $this->getDoctrine()->getRepository(User::class)->find($userId);
 
-        return $this->render('user/profile.html.twig',
+        $user = $this
+            ->getDoctrine()
+            ->getRepository(User::class)
+            ->find($userId);
+
+
+
+        return $this->render("user/profile.html.twig",
             ['user' => $user]);
     }
-
 
 
 

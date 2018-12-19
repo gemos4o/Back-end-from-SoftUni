@@ -50,6 +50,12 @@ class User implements UserInterface
      */
     private $statut;
 
+    /**
+     * @var SellBook[]
+     * @ORM\ManyToMany(targetEntity="SoftUniBundle\Entity\SellBook", mappedBy="users")
+     */
+    private $sellBook;
+
 
     /**
      * Get id
@@ -197,6 +203,22 @@ class User implements UserInterface
     public function eraseCredentials()
     {
         // TODO: Implement eraseCredentials() method.
+    }
+
+    /**
+     * @return SellBook[]
+     */
+    public function getSellBook()
+    {
+        return $this->sellBook;
+    }
+
+    /**
+     * @param SellBook[] $sellBook
+     */
+    public function setSellBook($sellBook)
+    {
+        $this->sellBook = $sellBook;
     }
 }
 
